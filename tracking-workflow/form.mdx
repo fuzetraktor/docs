@@ -1,0 +1,185 @@
+---
+title: "Formulários"
+description: "Taxonomia padrão de uso"
+---
+
+<Note>
+  Em certos page builders, prefixos podem ser usados nos IDs, mas o padrão geral
+  de nomeação deve ser seguido como referência.
+</Note>
+
+## Taxonomia
+
+Esta documentação descreve a convenção de nomenclatura para os IDs dos campos de formulários, incluindo tipos de inputs comuns. A estrutura de nomes deve seguir o formato:
+
+`[form-name]-[input-name]`
+
+O objetivo dessa padronização é garantir um tracking eficiente e dinâmico, facilitando a identificação e coleta de dados nas plataformas de análise.
+
+## Estrutura
+
+O padrão de IDs para cada campo de formulário será composto por:
+
+`[form-name]`: Nome do formulário (ex: contact-form, signup-form, etc.).
+
+`[input-name]`: Nome do campo de entrada ou input (ex: email, phone, etc.).
+
+## Campos
+
+Tipos de <Tooltip tip="inputs">campos</Tooltip> e como Definir o ID:
+
+### Texto
+
+**Descrição:** Usados para entradas simples de texto, como nome, sobrenome, etc.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** signup-form-first-name
+
+### E-mail
+
+**Descrição:** Usados para capturar endereços de e-mail.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** signup-form-email
+
+### Número
+
+Descrição: Usados para capturar números, como idade ou quantidade.
+
+Formato de ID: [form-name]-[input-name]
+
+Exemplo: contact-form-phone
+
+### Senha
+
+**Descrição:** Usados para capturar senhas do usuário.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** signup-form-password
+
+### Data
+
+**Descrição:** Usado para capturar datas, como data de nascimento.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** contact-form-birthdate
+
+### Textarea
+
+**Descrição:** Usado para entradas de texto mais longas, como mensagens ou observações.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** contact-form-message
+
+### Checkbox
+
+**Descrição:** Usado para capturar respostas binárias, como aceitar termos e condições.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** signup-form-terms
+
+### Radio
+
+**Descrição:** Usado para capturar uma escolha de várias opções, como gênero.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** signup-form-gender
+
+### Campo de Seleção (Select)
+
+**Descrição:** Usado para capturar uma escolha a partir de uma lista suspensa de opções, como país ou estado.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** contact-form-country
+
+### Campo de Arquivo
+
+**Descrição:** Usado para capturar arquivos, como anexos ou documentos.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** contact-form-attachment
+
+### Botão de Envio
+
+**Descrição:** Usado para capturar o clique do usuário para enviar o formulário.
+
+**Formato de ID:** [form-name]-[input-name]
+
+**Exemplo:** contact-form-submit
+
+## Recomendação
+
+<Steps>
+  <Step title=" Consistência nos Nomes">
+    Use nomes claros e descritivos tanto para os campos quanto para os
+    formulários.
+  </Step>
+  <Step title="Evitar Ambiguidade">
+    Certifique-se de que os nomes de cada campo sejam únicos dentro de cada
+    formulário para evitar confusão no tracking.
+  </Step>
+  <Step title="Acessibilidade">
+    Use atributos como aria-label para melhorar a acessibilidade e tornar o
+    formulário mais fácil de usar.
+  </Step>
+</Steps>
+
+## Conclusão
+
+Adotar uma taxonomia de IDs clara e padronizada para os campos do formulário melhora significativamente a **eficiência do tracking, facilitando a integração com plataformas de análise e automação.** Além disso, ajuda a garantir que os dados sejam capturados de forma precisa e consistente.
+
+## FAQ
+
+<AccordionGroup>
+
+<Accordion title="O que é tracking de formulários?">
+  Tracking de formulários é o processo de monitorar e registrar as interações
+  dos usuários com os campos de um formulário em seu site, como preenchimento e
+  envio de dados, para coletar informações valiosas para análise e otimização de
+  marketing e vendas.
+</Accordion>
+
+<Accordion title="Por que é importante fazer o tracking de formulários?">
+  O tracking de formulários permite entender o comportamento dos usuários,
+  identificar problemas de usabilidade e otimizar o desempenho de campanhas de
+  marketing. Além disso, oferece dados cruciais para o time de vendas,
+  permitindo um contato mais assertivo com leads qualificados.
+</Accordion>
+
+<Accordion title="Quais são as boas práticas de tracking de formulários?">
+  Utilize IDs padronizados para os campos. Não use iframes para formular os
+  formulários. Teste regularmente para garantir que os dados estão sendo
+  capturados corretamente. Evite sobrecarregar o formulário com eventos
+  desnecessários, mantendo-o simples e eficiente.
+</Accordion>
+
+<Accordion title="Posso automatizar o tracking de formulários?">
+  Sim, você pode automatizar o tracking utilizando ferramentas como Google Tag
+  Manager, que permitem configurar eventos de forma dinâmica sem necessidade de
+  alterar diretamente o código do site a cada novo formulário ou alteração.
+</Accordion>
+
+<Accordion title="Posso automatizar o tracking de formulários?">
+  Sim, você pode automatizar o tracking utilizando ferramentas como Google Tag
+  Manager, que permitem configurar eventos de forma dinâmica sem necessidade de
+  alterar diretamente o código do site a cada novo formulário ou alteração.
+</Accordion>
+
+</AccordionGroup>
+
+<Card
+  title="Implementação"
+  icon="code-branch"
+  href="/tracking-workflow/implementation"
+>
+  Fluxo de tracking completo
+</Card>

@@ -15,7 +15,7 @@
         "groups": [
           {
             "group": "Comece aqui",
-            "pages": ["introduction", "quickstart", "development"]
+            "pages": ["introduction", "development"]
           },
           {
             "group": "Traktor.js",
@@ -23,6 +23,14 @@
               "traktor-js/introduction",
               "traktor-js/installation",
               "traktor-js/flow"
+            ]
+          },
+          {
+            "group": "Tracking workflow",
+            "pages": [
+              "tracking-workflow/introduction",
+              "tracking-workflow/implementation",
+              "tracking-workflow/form"
             ]
           },
           {

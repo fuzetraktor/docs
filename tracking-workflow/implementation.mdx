@@ -1,0 +1,65 @@
+---
+title: "Implementação"
+description: "Fluxo de implementação"
+---
+
+## Ambiente de desenvolvimento
+
+Primeiramente, é importante entender que a implementação do tracking pode variar dependendo do ambiente de desenvolvimento que você está utilizando, como WordPress, React, Vue, Webflow ou outros page builders. **Embora cada plataforma tenha suas particularidades na implementação, a lógica básica de tracking permanece a mesma.**
+
+## Padrão do formulário
+
+Independente da plataforma, o ideal é que os campos do formulário sigam um padrão de IDs como:
+
+`[form-name]-[input-name]`
+
+Exemplo:
+
+- `contact-form-name` para o campo de nome no formulário de contato.
+
+- `signup-form-email` para o campo de email no formulário de inscrição.
+
+Esse padrão ajuda a organizar o tracking e tornar a integração com ferramentas de análise mais eficiente.
+
+## Disparo de Eventos no DataLayer
+
+Após definir os IDs, é crucial garantir que os eventos sejam disparados corretamente no DataLayer. O DataLayer é onde você armazena as informações de interação para enviar às plataformas de rastreamento (como Google Tag Manager ou outras).
+
+### Exemplo de evento no DataLayer
+
+```javascript
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: "formSubmit",
+  formName: "contact-form",
+  inputName: "email",
+  inputValue: "user@example.com",
+});
+```
+
+Certifique-se de que os eventos estão sendo disparados no momento certo, para garantir que o tracking seja preciso.
+
+## Considerações importantes
+
+<Steps>
+  <Step title=" Eventos Corretos">
+    Garanta que os eventos sejam disparados para os campos de formulário com
+    base nas interações dos usuários.
+  </Step>
+  <Step title="Teste a Implementação">
+    Antes de colocar o código em produção, utilize ferramentas como o console do
+    navegador ou o Google Tag Assistant para testar os eventos e garantir que
+    eles estejam funcionando corretamente.
+  </Step>
+</Steps>
+
+<Info>
+  Lembre-se de testar os eventos do DataLayer antes de finalizar a implementação
+  para evitar problemas na coleta de dados.
+</Info>
+
+Embora o processo de implementação de tracking possa variar dependendo da plataforma, o conceito central de utilizar um padrão de IDs e garantir o disparo correto dos eventos permanece o mesmo. Isso facilita a coleta de dados e ajuda a melhorar as análises e a personalização das campanhas.
+
+<Card title="Formulários" icon="input-text" href="/tracking-workflow/form">
+  Taxonomia padrão para formulários
+</Card>
