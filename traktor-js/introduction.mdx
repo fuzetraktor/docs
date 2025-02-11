@@ -1,0 +1,46 @@
+---
+title: "Introdução"
+description: "Script para rastreamento de origem de leads"
+---
+
+O **Traktor.js** é um script projetado para melhorar a análise de mídia e rastreamento de conversões, permitindo identificar e classificar a origem dos leads. Ele armazena essas informações em cookies e as envia para o CRM, facilitando a tomada de decisões estratégicas em campanhas de marketing.
+
+## Benefícios
+
+- Identifica a principal origem geradora de leads.
+
+- Acompanha a jornada de conversão do usuário dentro do site (cross-channel).
+
+- Mede a presença e impacto de cada origem, campanha e termo na conversão.
+
+- Envia os dados coletados diretamente para o CRM, melhorando a gestão de leads.
+
+- Cruza os dados do formulário com as informações coletadas, permitindo segmentação otimizada de audiências.
+
+## Limitações
+
+- Se o usuário limpar os cookies, o histórico de acessos será perdido.
+
+- O script não realiza acompanhamento cross-device, ou seja, acessos por dispositivos diferentes são considerados usuários distintos.
+
+## Cookies utilizados
+
+As informações obtidas pelo Traktor.js são armazenadas nos seguintes cookies:
+
+- **lastSourceAttribution** (última origem atribuída)
+
+- **firstSourceAttribution** (primeira origem atribuída)
+
+- **multiSourceAttribution** (histórico completo de origem)
+
+- **fbc** (ID de clique do Meta Ads)
+
+- **gclid** (ID de clique do Google Ads)
+
+- **utmSource, utmMedium, utmCampaign, utmTerm, utmContent** (parâmetros UTM da URL)
+
+<Card title="Integração com CRM" icon="database">
+  Os dados coletados pelo script são automaticamente armazenados e enviados ao
+  CRM por meio de campos ocultos no formulário, facilitando a rastreabilidade da
+  origem dos leads.
+</Card>

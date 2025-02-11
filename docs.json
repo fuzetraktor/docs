@@ -11,11 +11,19 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Guias",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Comece aqui",
             "pages": ["introduction", "quickstart", "development"]
+          },
+          {
+            "group": "Traktor.js",
+            "pages": [
+              "traktor-js/introduction",
+              "traktor-js/installation",
+              "traktor-js/flow"
+            ]
           },
           {
             "group": "Essentials",
@@ -26,6 +34,22 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Dicionário",
+        "groups": [
+          {
+            "group": "Termos",
+            "pages": [
+              "dictionary/data-managment",
+              "dictionary/data-architexture",
+              "dictionary/workflow-automation",
+              "dictionary/campaign-orchestration",
+              "dictionary/lead-managment",
+              "dictionary/metricas"
             ]
           }
         ]
@@ -51,6 +75,11 @@
     "global": {
       "anchors": [
         {
+          "anchor": "Site",
+          "href": "https://gotraktor.com/?utm_source=docs-traktor&utm_medium=referral&utm_campaign=default",
+          "icon": "pager"
+        },
+        {
           "anchor": "Blog",
           "href": "https://gotraktor.com/pt/blog/?utm_source=docs-traktor&utm_medium=referral&utm_campaign=default",
           "icon": "newspaper"
@@ -71,7 +100,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Site",
+      "label": "Fale conosco",
       "href": "https://gotraktor.com/?utm_source=docs-traktor&utm_medium=referral&utm_campaign=default"
     }
   },
