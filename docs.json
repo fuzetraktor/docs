@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "TraktorDocs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#F7931E",
+    "light": "#FFB34D",
+    "dark": "#C76D0B"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -15,11 +15,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
+            "pages": ["introduction", "quickstart", "development"]
           },
           {
             "group": "Essentials",
@@ -39,9 +35,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint Examples",
@@ -57,18 +51,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://gotraktor.com/pt/blog/?utm_source=docs-traktor&utm_medium=referral&utm_campaign=default",
           "icon": "newspaper"
         }
       ]
@@ -81,21 +65,21 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Suporte",
+        "href": "mailto:baccarin@gotraktor.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Site",
+      "href": "https://gotraktor.com/?utm_source=docs-traktor&utm_medium=referral&utm_campaign=default"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/gotraktor/",
+      "instagram": "https://www.instagram.com/gotraktor/",
+      "youtube": "https://www.youtube.com/@gotraktor"
     }
   }
 }
